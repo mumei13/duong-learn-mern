@@ -1,0 +1,70 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "duong1",
+    "email": "otaku1462@gmail.com",
+    "password": "1234"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "duong1",
+    "password": "321"
+}
+
+
+### 
+
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjJlYjkwZDU3NDFiM2VkNGM0ZmYzMTAiLCJpYXQiOjE2NDcyMjkyMDF9.98eIEwRb3lsC5q2LfGz-4iTKDXjHQAnT21OVjUoT3Dg
+
+{
+    "title": "high nek",
+    "description": "hehe",
+    "url": "facebook.com",
+    "status": "TO LEARN"
+}
+
+
+###
+
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjJlYjkwZDU3NDFiM2VkNGM0ZmYzMTAiLCJpYXQiOjE2NDcyMjkyMDF9.98eIEwRb3lsC5q2LfGz-4iTKDXjHQAnT21OVjUoT3Dg
+
+
+###
+
+PUT http://localhost:5000/api/posts/622eb9315741b3ed4c4ff313
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjJlYjkwZDU3NDFiM2VkNGM0ZmYzMTAiLCJpYXQiOjE2NDcyMjkyMDF9.98eIEwRb3lsC5q2LfGz-4iTKDXjHQAnT21OVjUoT3Dg
+
+{
+    "title": "vue",
+    "description": "nani",
+    "url": "vue.org",
+    "status": "LEARNING"
+}
+
+
+###
+
+DELETE  http://localhost:5000/api/posts/622eb9315741b3ed4c4ff313
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjJlYjkwZDU3NDFiM2VkNGM0ZmYzMTAiLCJpYXQiOjE2NDcyMjkyMDF9.98eIEwRb3lsC5q2LfGz-4iTKDXjHQAnT21OVjUoT3Dg
+
+
+###
+
+POST http://localhost:5000/api/auth/change-password
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjM3NmNmMjA3ZDkxYjY3NWEzZDBmZjEiLCJpYXQiOjE2NDc4MDQwMzF9.vPjkcZALUYG5UVV5iv_H6ifG-zLvyWPZGJOpRg-qEAg
+Content-Type: application/json
+
+{
+    "password": "321"
+}

@@ -1,0 +1,25 @@
+button.nav--btn-logout {
+    color: white;
+    background-color: black;
+}
+
+.navbar {
+    background: #1fa4ad;
+    height: 70px;
+}
+
+.navbar-direction-row {
+    display: flex;
+    flex-direction: row;
+}
+
+a.nav-link {
+    color: #ffffff;
+    width: 300px !important;
+    height: 70px;
+    padding: 20px;
+}
+
+a.nav-link:hover{
+    color: rgb(114, 71, 71);
+}
